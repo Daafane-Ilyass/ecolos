@@ -1,0 +1,128 @@
+/* CartScreen.css */
+.cart {
+  padding: 20px;
+  height: 100vh;
+  padding: 0 128px;
+}
+
+.cart h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.cart .message-info {
+  font-size: 18px;
+}
+
+.cart .message-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cart .list-group-item {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 10px;
+  list-style: none;
+}
+
+.cart .cart-img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart .list-group-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cart .list-group-item a:hover {
+  text-decoration: underline;
+}
+
+.cart .quantity-select select {
+  padding: 3px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.cart .pi-trash {
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid transparent;
+  color: var(--black);
+}
+
+.cart .pi-trash:hover {
+  border-color: red;
+  color: red;
+  border-radius: 50%;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.cart .checkout-cta {
+  background: #333;
+  color: var(--white);
+  outline: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.cart .checkout-cta:disabled {
+  background: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* Customize column widths for medium screens */
+@media (min-width: 768px) {
+  .cart .cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart .cart-col-md-2 {
+    flex: 0 0 calc(16.666667% - 20px);
+    max-width: calc(16.666667% - 20px);
+    margin-right: 20px;
+  }
+
+  .cart .cart-col-md-3 {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin-right: 20px;
+  }
+
+  .cart .cart-col-md-4 {
+    flex: 0 0 calc(33.333333% - 20px);
+    max-width: calc(33.333333% - 20px);
+    margin-right: 20px;
+  }
+
+  .cart .cart-col-md-1 {
+    flex: 0 0 calc(8.3333335% - 20px);
+    max-width: calc(8.3333335% - 20px);
+    margin-right: 20px;
+  }
+
+  .cart .cart-col-md-8 {
+    flex: 0 0 calc(66.666667% - 20px);
+    max-width: calc(66.666667% - 20px);
+    margin-right: 20px;
+  }
+
+  /* Remove right margin for the last column */
+  .cart .cart-row .cart-col-md-8:last-child,
+  .cart .cart-row .cart-col-md-4:last-child,
+  .cart .cart-row .cart-col-md-3:last-child,
+  .cart .cart-row .cart-col-md-2:last-child,
+  .cart .cart-row .cart-col-md-1:last-child {
+    margin-right: 0;
+  }
+}

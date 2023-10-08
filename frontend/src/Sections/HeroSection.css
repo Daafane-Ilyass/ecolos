@@ -1,0 +1,61 @@
+.hero-section {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  color: var(--white);
+  text-align: center;
+  font-family: Inter;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 636px;
+  height: 109px;
+}
+
+.hero-section h1 span {
+  color: var(--apple);
+}
+
+.hero-section p {
+  width: 1009px;
+  height: 33px;
+  flex-shrink: 0;
+  color: var(--white);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero-section .hero-btn {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  width: 338px;
+  height: 39px;
+  flex-shrink: 0;
+  color: var(--white);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 5%;
+  transition: background-color ease-in 0.4s;
+  transition: color ease 0.4s;
+}
+
+.hero-section .hero-btn:hover {
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+}

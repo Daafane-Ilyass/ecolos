@@ -1,0 +1,5 @@
+/* CSS for centering the shipping-screen div */
+.shipping-screen {
+  height: 85vh;
+  text-align: center;
+}

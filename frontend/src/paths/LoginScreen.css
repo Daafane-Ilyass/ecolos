@@ -1,0 +1,98 @@
+/* LoginScreen.css */
+
+/* Bootstrap-like container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Bootstrap-like form control */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Bootstrap-like primary button */
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* Bootstrap-like button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Bootstrap-like label style */
+label {
+  font-weight: bold;
+}
+
+/* Bootstrap-like alert style for error messages */
+.alert {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+
+/* Bootstrap-like alert link color */
+.alert a {
+  color: #721c24;
+  font-weight: bold;
+}
+
+/* Bootstrap-like text-center class */
+.text-center {
+  text-align: center;
+}
+
+/* Bootstrap-like py-3 class for padding */
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Bootstrap-like container-fluid class for a full-width container */
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Bootstrap-like row class for grid layout */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Bootstrap-like col-md-8 class for a medium-sized column */
+.col-md-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+/* Bootstrap-like col-md-4 class for a medium-sized column */
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}

@@ -1,0 +1,35 @@
+/* Custom CSS for React Bootstrap components */
+
+/* Styling for the container */
+.my-container {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Center the content horizontally on medium-sized screens */
+.my-row.justify-content-md-center {
+  justify-content: center;
+}
+
+/* Styling for the columns */
+.my-col {
+  padding: 20px; /* Add padding as needed */
+  background-color: #f0f0f0; /* Background color for columns */
+  border: 1px solid #ddd; /* Border for columns */
+  border-radius: 5px; /* Border radius for columns */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for columns */
+  margin: 0 auto;
+  text-align: center;
+  min-height: 400px;
+}
+
+.my-col-xs-12 {
+  width: 100%; /* Full width for xs screens */
+}
+
+@media (min-width: 768px) {
+  .my-col-md-6 {
+    width: 50%; /* Half width for md screens and larger */
+  }
+}
+/* Example styling for children components */
+/* You can add specific styles for components inside the columns here */

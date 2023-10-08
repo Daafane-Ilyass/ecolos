@@ -1,0 +1,15 @@
+.search-filter .search {
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 200px;
+  background-color: #000;
+  text-align: left;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+}
+
+.search-filter {
+  width: 100%;
+  text-align: center;
+  padding-top: 3%;
+}

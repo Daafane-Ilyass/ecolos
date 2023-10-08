@@ -1,0 +1,89 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 38px;
+  height: 10vh;
+  margin: 0 120px;
+}
+
+.NavBar .nav-links {
+  display: flex;
+  list-style: none;
+  width: 253px;
+  justify-content: space-between;
+  color: var(--white);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.NavBar .nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+}
+
+.NavBar .nav-links a::after {
+  content: "";
+  background-color: var(--white);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform: translateY(200%);
+  transition: width ease-in 0.5s;
+  position: absolute;
+}
+.NavBar .nav-links .active::after {
+  width: 100%;
+}
+.NavBar .nav-links a:hover::after {
+  width: 100%;
+}
+
+.NavBar .cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.NavBar .cta-btn .pi-shopping-cart {
+  color: white;
+  font-size: 1.3rem;
+}
+.NavBar .cta-btn a {
+  padding: 9px 15px;
+  margin-left: 30px;
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 24px;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.NavBar .cta-btn .sign-in {
+  border: 2px solid transparent;
+  transition: border-color ease-in 0.4s;
+}
+
+.NavBar .cta-btn .sign-in:hover {
+  border-color: var(--white);
+}
+
+.NavBar .cta-btn .sign-up {
+  border: 2px solid var(--white);
+  transition: background-color ease-in 0.4s;
+  transition: color ease 0.4s;
+}
+
+.NavBar .cta-btn .sign-up:hover {
+  background-color: var(--white);
+  color: var(--black);
+}

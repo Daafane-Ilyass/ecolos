@@ -1,0 +1,119 @@
+.slider .carousel {
+  overflow: hidden;
+  cursor: grab;
+  padding: 100px 0;
+}
+
+.slider .inner-carousel {
+  display: flex;
+}
+
+/* .slider .item {
+  min-width: 25rem;
+  margin: 40px 20px;
+  border: 4px solid var(--black);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider .item img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 2rem 2rem 0 0;
+} */
+
+.slider .item {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #54677c;
+  position: relative;
+  min-width: 25rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+  margin: 56px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .card-image {
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--apple);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slider .card-image img {
+  width: 100%;
+  transform: scale(1.1);
+}
+
+.slider p {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.slider .name {
+  margin-top: 7rem;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+
+.slider .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.slider button {
+  margin: 12px 8px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  background-color: var(--apple);
+}
+
+.slider button:hover {
+  opacity: 0.8;
+}
+
+.slider button i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/* Social media colors */
+
+.slider button.instagram {
+  background-color: #c13584;
+}
+
+.slider button.facebook {
+  background-color: #3b5998;
+}
+
+.slider button.twitter {
+  background-color: #1da1f2;
+}

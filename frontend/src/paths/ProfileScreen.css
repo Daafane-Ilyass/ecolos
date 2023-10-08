@@ -1,0 +1,75 @@
+.profile-screen {
+  height: auto;
+  padding: 70px 128px;
+  text-align: center;
+}
+
+.profile-screen h2 {
+  color: black;
+}
+
+/* styles.css */
+
+/* Bootstrap-like styles */
+.profile-screen .row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom styles */
+.custom-md-3 {
+  border: 1px solid #ccc;
+  padding: 50px 15px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-md-3 h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add more custom styles as needed */
+
+/* Navbar and Footer styles can be added here */
+
+.col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom styles for h3 */
+.col-md-9 h3 {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px;
+  color: #333; /* Text color */
+}
+
+.custom-md-9 {
+  border: 1px solid #ccc;
+  padding: 50px 15px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
