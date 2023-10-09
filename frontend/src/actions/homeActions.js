@@ -14,7 +14,9 @@ import {
 export const listTeam = () => async (dispatch) => {
   try {
     dispatch({ type: TEAM_LIST_REQUEST });
-    const { data } = await axios.get("http://127.0.0.1:8000/api/home/team");
+    const { data } = await axios.get(
+      "https://ecolos.onrender.com/api/home/team"
+    );
     dispatch({ type: TEAM_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -30,7 +32,9 @@ export const listTeam = () => async (dispatch) => {
 export const listArticles = () => async (dispatch) => {
   try {
     dispatch({ type: ARTICLES_LIST_REQUEST });
-    const { data } = await axios.get("http://127.0.0.1:8000/api/home/articles");
+    const { data } = await axios.get(
+      "https://ecolos.onrender.com/api/home/articles"
+    );
     dispatch({ type: ARTICLES_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -46,7 +50,9 @@ export const listArticles = () => async (dispatch) => {
 export const listFAQ = () => async (dispatch) => {
   try {
     dispatch({ type: FAQ_LIST_REQUEST });
-    const { data } = await axios.get("http://127.0.0.1:8000/api/home/faq");
+    const { data } = await axios.get(
+      "https://ecolos.onrender.com/api/home/faq"
+    );
     dispatch({ type: FAQ_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({

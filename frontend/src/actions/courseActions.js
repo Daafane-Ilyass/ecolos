@@ -8,7 +8,7 @@ import {
 export const listCourses = () => async (dispatch) => {
   try {
     dispatch({ type: COURSE_LIST_REQUEST });
-    const { data } = await axios.get("http://127.0.0.1:8000/api/courses");
+    const { data } = await axios.get("https://ecolos.onrender.com/api/courses");
     dispatch({ type: COURSE_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({

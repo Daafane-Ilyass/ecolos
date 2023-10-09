@@ -32,7 +32,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.post(
-      "http://localhost:8000/api/orders/add",
+      "https://ecolos.onrender.com/api/orders/add",
       order,
       config
     );
@@ -75,7 +75,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:8000/api/orders/${id}`,
+      `https://ecolos.onrender.com/api/orders/${id}`,
       config
     );
 
@@ -110,7 +110,7 @@ export const payOrder = (id, paymentResult) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `http://localhost:8000/api/orders/${id}/pay`,
+      `https://ecolos.onrender.com/api/orders/${id}/pay`,
       paymentResult,
       config
     );
@@ -146,7 +146,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      "http://localhost:8000/api/orders/myorders",
+      "https://ecolos.onrender.com/api/orders/myorders",
       config
     );
 

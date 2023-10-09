@@ -28,7 +28,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "http://localhost:8000/api/users/login",
+      "https://ecolos.onrender.com/api/users/login",
       { username: email, password: password },
       config
     );
@@ -74,7 +74,7 @@ export const register = (name, email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "http://localhost:8000/api/users/register",
+      "https://ecolos.onrender.com/api/users/register",
       { name: name, email: email, password: password },
       config
     );
@@ -117,7 +117,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:8000/api/users/${id}`,
+      `https://ecolos.onrender.com/api/users/${id}`,
       config
     );
 
@@ -152,7 +152,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `http://localhost:8000/api/users/profile/update`,
+      `https://ecolos.onrender.com/api/users/profile/update`,
       user,
       config
     );
