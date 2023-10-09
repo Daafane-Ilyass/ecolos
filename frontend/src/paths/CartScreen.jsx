@@ -60,7 +60,7 @@ const CartScreen = () => {
                     <div className="cart-row">
                       <div className="cart-col-md-2">
                         <img
-                          src={`http://127.0.0.1:8000${item.image}`}
+                          src={item.image}
                           alt={item.name}
                           className="cart-img-fluid cart-rounded"
                         />

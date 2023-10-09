@@ -11,7 +11,10 @@ from base.serializers import ArticleSerializer, TeamMemberSerializer, FAQSeriali
 
 @api_view(['GET'])
 def getTeamMembers(request):
+    cloudinary_base_url = "https://res.cloudinary.com/ddmrzgid5/"
     team = TeamMember.objects.all()
+    for member in team:
+        member.profileImage = f"{cloudinary_base_url}{member.profileImage}"
     serializer = TeamMemberSerializer(team, many=True)
     return Response(serializer.data)
 

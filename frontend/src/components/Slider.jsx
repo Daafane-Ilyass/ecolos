@@ -58,10 +58,7 @@ const Slider = () => {
               {team.map((member) => (
                 <motion.div className="item" key={member._id}>
                   <div className="card-image">
-                    <img
-                      src={`http://127.0.0.1:8000${member.profileImage}`}
-                      alt="carousel-image"
-                    />
+                    <img src={member.profileImage} alt="carousel-image" />
                   </div>
                   <p className="name">{member.name.toUpperCase()}</p>
                   <p>{member.post.toUpperCase()}</p>

@@ -1,6 +1,15 @@
+import dj_database_url
 from datetime import timedelta
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+# import environ
+
+# env = environ.Env()
+# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yoy+e@=g(cchkl*0-0@l77sl0s#pkm(=b8m1&yp^i0l)(p3)dm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -33,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'base.apps.BaseConfig',
+    'cloudinary',
 ]
 
 REST_FRAMEWORK = {
@@ -119,13 +129,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
+DATABASES = {
+    'default': dj_database_url.parse('postgres://ecolos_database_user:jtHXUahoXtxSG10kD3ERo7mTiQFVXJ2P@dpg-ckhfdomafg7c73dn3cog-a.frankfurt-postgres.render.com/ecolos_database')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -182,3 +195,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Cloudinary Django integration
+
+cloudinary.config(
+    cloud_name="ddmrzgid5",
+    api_key="118442729631497",
+    api_secret="_--zoz6chvKLrY4T0-T39Sa5tXA",
+)

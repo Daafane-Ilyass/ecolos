@@ -113,7 +113,7 @@ const PlaceOrderScreen = () => {
                               <div className="row">
                                 <div className="col-md-4">
                                   <img
-                                    src={`http://127.0.0.1:8000${item.image}`}
+                                    src={item.image}
                                     alt={item.name}
                                     className="img-fluid rounded"
                                   />

@@ -17,10 +17,7 @@ const Product = ({ product }) => {
       <a className="card">
         {/* style={{backgroundColor: product.color}} */}
         <div className="card__img">
-          <img
-            src={`http://127.0.0.1:8000${product.image}`}
-            alt="product image"
-          />
+          <img src={product.image} alt="product image" />
         </div>
         <div className="card__name">
           <p>{product.name}</p>
